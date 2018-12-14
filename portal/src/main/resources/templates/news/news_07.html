@@ -1,0 +1,109 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:gm="" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout/layout">
+<head>
+    <link gm:href="index">
+    <link gm:href="content">
+    <style>
+        table{
+            width: 90%;
+            margin: auto;
+            border: 1px solid rgba(255,255,255,.7);
+            border-collapse: collapse
+        }
+        td{
+            border: 1px solid rgba(255,255,255,.7);
+            color: rgba(255,255,255,.7);
+            height: 45px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body id="index-body">
+<div layout:fragment="content"><div id="phoneMenuName" style="display: none;">最新动态</div>
+    <div th:replace="layout/commonTop :: carouse('最新动态',
+                                                    'bg_news_top.png',
+                                                    '多年来，我们致力于扎根行业，深入场景进行产品设计和创新，为行业用户构建端到端的解决方案，为客户网络创造新价值。')">
+    </div>
+
+    <div th:replace="layout/breadNav :: nav('首页,最新动态,冠铭科技智慧校园基础网络多种投资方式对比','/pageindex,/pagenews-news,/pagenews-news_07')"></div>
+
+    <div class="container content-detail">
+        <div class="content-top">
+            <div class="content-title">冠铭科技智慧校园基础网络多种投资方式对比</div>
+            <div class="content-info">作者：admin &nbsp; 发布日期：2018/11/12 &nbsp; 关注次数：591</div>
+        </div>
+        <div class="content-bottom">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>学校自建</td>
+                    <td>运营商投资</td>
+                    <td>冠铭公司投资（与设备厂商合作）</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">建设成本</td>
+                    <td>最高</td>
+                    <td>较高</td>
+                    <td>最低</td>
+                </tr>
+                <tr>
+                    <td>学校付全部费用</td>
+                    <td>1、只做一部分基础建设（也称不完全投资）<br>
+                        2、运营权、资产与校方无关</td>
+                    <td>1、免除学校全部成本<br>
+                        2、运营权分享<br>
+                        3、资产十年后赠送校方</td>
+                </tr>
+                <tr>
+                    <td>解决方案</td>
+                    <td>1、方案以预算为主设计，有多少钱，办多少事，长远规划不易<br>
+                        2、投资有限，实现规划周期长</td>
+                    <td>1、仅在固定网络方面投入，不做无线网络覆盖<br>
+                        2、以接入网络为主</td>
+                    <td>1、固网、无线网络全投入，首投即实现网络覆盖到位及高网速达标<br>
+                        2、专业的人做专业的事，战略规划长远</td>
+                </tr>
+                <tr>
+                    <td>后期维护</td>
+                    <td>1、专业人才资源缺少<br>
+                        2、人力成本高</td>
+                    <td>故障响应速度慢</td>
+                    <td>最专业的运维人员驻校支持</td>
+                </tr>
+                <tr>
+                    <td>采购流程与建设周期</td>
+                    <td>审批与采购和建设流程长</td>
+                    <td>审批与采购和建设流程较长</td>
+                    <td>1、审批简便<br>
+                        2、厂家直接发货<br>
+                        3、专业服务团队<br>
+                        4、建设工期短</td>
+                </tr>
+                <tr>
+                    <td>后续更新投资</td>
+                    <td>需要重新筹措资金和走审批流程</td>
+                    <td>无法保障</td>
+                    <td>承诺10年动态投资和不断调优</td>
+                </tr>
+                <tr>
+                    <td>管理服从性</td>
+                    <td>自我管理，学校统一规划</td>
+                    <td>校方较难管理沟通</td>
+                    <td>服从学校管理与规划</td>
+                </tr>
+                <tr>
+                    <td>运营资费</td>
+                    <td>1、学校自建自营<br>
+                        2、学校定价</td>
+                    <td>1、易产生垄断<br>
+                        2、抬高价格</td>
+                    <td>1、引入多家运营商竞争<br>
+                        2、价格更优惠</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

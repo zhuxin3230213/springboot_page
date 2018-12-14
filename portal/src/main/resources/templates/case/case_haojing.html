@@ -1,0 +1,45 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:gm="" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout/layout">
+<head>
+    <link gm:href="index">
+    <link gm:href="content">
+</head>
+<body id="index-body">
+<div layout:fragment="content"><div id="phoneMenuName" style="display: none;">客户案例</div>
+    <div th:replace="layout/commonTop :: carouse('客户案例',
+                                                    'case/bg_top.png',
+                                                    '多年来，我们致力于扎根行业、深入场景进行产品设计和创新，为行业用户构建端到端的解决方案，为客户网络创造新价值')">
+    </div>
+
+    <div th:replace="layout/breadNav :: nav('首页,客户案例,陕西科技大学镐京学院案例','/pageindex,/pagecase-case,/pagecase-case_haojing')"></div>
+
+    <div class="container content-detail">
+        <div class="content-top">
+            <div class="content-title">陕西科技大学镐京学院案例</div>
+            <div class="content-info">作者：admin &nbsp; 发布日期：2018/6/10 &nbsp; 关注次数：203</div>
+        </div>
+        <div class="content-bottom">
+            <h4>学校概况</h4>
+            <p>陕西科技大学镐京学院是全国重点大学——陕西科技大学按照新机制、新模式与陕西斯卡雷.博德制衣有限公司合作举办的本科层次独立学院。学院成立于2004年，是陕西省首批设立的八所独立学院之一。学院南眺秦岭，北临渭水，东濒沣河，占地面积548亩。建有教学楼、科技楼、实验室、图书馆、学生宿舍、学生餐厅及标准田径场等设施；建成数字化校园，校园网络高速畅通；校内实习工厂2个，校外实训基地17个，各类综合性实验室57个，充分满足各专业学生实验课程教学需要和实践能力的培养。学院在校学生1万人左右，有专任教师415人，其中著名专家教授135人，具有研究生以上学历的252人。</p>
+
+            <h4>原有网络概况</h4>
+            <p>1、无线网络覆盖率低，全校安装各类无线AP共计531台，无法满足教育部要求的98%的全院覆盖率。</p>
+            <p>2、学院网络没有专业的网络行为管理设备，不能满足最新的网络安全法及公安部要求的82令。</p>
+
+            <h4>冠铭科技投资后</h4>
+            <p>1、建设内容：对校区进行有线网络及无线网络的建设，其中无线网络覆盖率达到98%。并将有线网络按业务的不同需要进行物理的网络隔离。</p>
+            <p>2、新增无线AP 355多台，POE交换机14台。</p>
+            <p>3、新增核心交换机1套；上网行为管理、认证计费等设备各1套。</p>
+            <p>4、实现对学校学生，教职工上网行为进行统一认证及计费，并对上网用户的行为进行审计及日志记录存储等。</p>
+            <p>5、学院校园网的整合，加速学校信息化建设进程，为信息化校园提供了稳定且可持续发展的基础平台。</p>
+
+            <div class="content-img"><img src="/static/images/case/case_haojing01.jpg" alt="01"></div>
+
+            <div class="content-img"><img src="/static/images/case/case_haojing02.jpg" alt="02"></div>
+
+            <div class="content-img"><img src="/static/images/case/case_haojing03.jpg" alt="02"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

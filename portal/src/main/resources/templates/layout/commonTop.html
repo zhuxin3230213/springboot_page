@@ -1,0 +1,11 @@
+<div th:fragment="carouse(title,img,info)" class="carouselImg commonTopDiv" >
+    <img class="commonTopImg hidden-xs hidden-sm" th:attr="src=@{'/static/images/'+${img}}, alt=${title}">
+    <div class="hidden-md hidden-lg" th:style="'background:url('+@{'../static/images/'+${img}}+');height: 100%;background-position: center center;'"></div>
+    <div class="solution-introduction">
+        <div class="container">
+            <h1 th:text="${title}"></h1>
+            <p th:text="${info}"></p>
+        </div>
+    </div>
+    <div class="index-maskLayer"></div>
+</div>

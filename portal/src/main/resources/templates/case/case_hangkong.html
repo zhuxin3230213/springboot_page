@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:gm="" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout/layout">
+<head>
+    <link gm:href="index">
+    <link gm:href="content">
+</head>
+<body id="index-body">
+<div layout:fragment="content"><div id="phoneMenuName" style="display: none;">客户案例</div>
+    <div th:replace="layout/commonTop :: carouse('客户案例',
+                                                    'case/bg_top.png',
+                                                    '多年来，我们致力于扎根行业、深入场景进行产品设计和创新，为行业用户构建端到端的解决方案，为客户网络创造新价值')">
+    </div>
+
+    <div th:replace="layout/breadNav :: nav('首页,客户案例,陕西航空技师学院案例','/pageindex,/pagecase-case,/pagecase-case_hangkong')"></div>
+
+    <div class="container content-detail">
+        <div class="content-top">
+            <div class="content-title">陕西航空技师学院案例</div>
+            <div class="content-info">作者：admin &nbsp; 发布日期：2017/11/28 &nbsp; 关注次数：201</div>
+        </div>
+        <div class="content-bottom">
+            <div class="content-img"><img src="/static/images/case/case_hangkong01.jpg" width="881" alt="01"></div>
+            <h4>学校概况</h4>
+            <p>陕西航空技师学院（中航工业012基地技工学校）是直属于中国航空工业集团公司的一所独立建制的地厅级事业单位。学院始建于1977年，经过四十年的发展和壮大，现已成为集教学、生产、培训、科研、职业鉴定、招生就业于一体的国家级大型职业教育培训基地。学院占地面积约600亩，固定资产近两亿元。目前，拥有金切动力设备900余台（套），图书馆藏书3万余册。现有在校生4000余人，开办中技工、高技工、预备技师培训和中专、大专、本科教育等不同层次的培训。学院依托陕西省，面向全国招生，建立了20多个招生基地。</p>
+
+            <h4>原有网络概况</h4>
+            <p>1、学校办公网：学校只有有线办公网，办公网为学校自建，网络设备为神舟数码，设备性能低。</p>
+            <p>2、学生公寓网络：学校学生公寓网络为运营商投建，设备老旧，许多区域设备以损坏，学生无法正常使用网络进行学习，娱乐等。</p>
+            <p>3、无线网络覆盖：学校无线网络覆盖率为0%。</p>
+            <p>4、学生生活用网与学校办公网络相对独立，无法进行资源共享等。</p>
+
+            <h4>冠铭科技投资后</h4>
+            <p>1、建设内容：为学校进行全校的无线网络全覆盖，无线网络覆盖率高达98%，建设区域包括办公楼、教学楼、实训楼、1#公寓楼、2#公寓楼、3#公寓楼、活动中心、实习工厂、模具车间等无线网络信号全覆盖，并对原有有线网络进设备升级并与无线网络进行整合。</p>
+            <p>2、安装面板AP，500台；吸顶AP，120台；室外AP，40台。</p>
+            <p>3、新增防火墙、核心交换机、上网行为管理、认证计费等设备各1台。</p>
+            <p>4、新增汇聚交换机8台，POE接入交换机40台。</p>
+            <p>5、实现对学校学生，教职工上网行为进行统一管理。</p>
+            <p>6、积极迎合陕西省厅关于《2017年高校信息化建设工作》红头文件，加速学校信息化建设进程，为信息化校园提供了稳定且可持续发展的基础平台。</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

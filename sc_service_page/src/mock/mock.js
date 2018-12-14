@@ -1,0 +1,6 @@
+// require('./sysconfig/org')
+// require('./sysconfig/user')
+// require('./sysconfig/userinfo')
+// require('./sysconfig/role')
+// require('./syspriv/menu')
+// require('./smartschoolMiddle/school')

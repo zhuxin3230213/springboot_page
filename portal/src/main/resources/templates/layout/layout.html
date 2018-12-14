@@ -1,0 +1,94 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:gm="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="西安冠铭科技股份有限公司是一家专业从事校园网络,高校信息化,智慧校园,无线wifi覆盖的应用和服务的公司,为广大高校用户提供建设智慧校园基础网络和运维服务,同时为用户提供卓越的教育信息化解决方案.">
+    <meta name="keywords" content="校园网络,无线wifi,智慧校园,冠名科技,冠铭科技,冠铭,冠名,西安冠铭官网">
+    <title>西安冠铭官网,智慧校园、基础网络一体化解决方案</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link gm:href="global">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <style>
+        @media (max-width: 768px) {
+            .footer-nav,.footer-companyInfo,.footer-version p{
+                max-width: 305px;
+            }
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/static/js/common.js"></script>
+    <script>
+        $(function(){
+            navChange();
+
+            $(".solution-nav li").click(function(){
+                $(this).parent().find("li").removeClass("on");
+                $(this).addClass("on");
+            });
+
+            //一级菜单支持直接点击跳转
+            $(document).off('click.bs.dropdown.data-api');
+
+            //鼠标移动到一级菜单自动弹出二级菜单
+            dropdownOpen();
+
+            //页面置顶
+            $(".divContainer").scroll(function() {
+                if ($(".divContainer").scrollTop() > 100) {
+                    $(".up").addClass("act");
+                } else {
+                    $(".up").removeClass("act");
+                }
+
+                //移动端 - 滑动屏幕的时候关闭二级菜单
+                $(".secnavm ul").slideUp();
+                $(".secnavm h4").find("img").removeClass('act');
+            });
+            $(".up").click(function(event) {
+                $(".divContainer").animate({
+                    scrollTop: 0
+                }, 300);
+            });
+
+            $(window).resize(function(){
+                //根据窗口变化动态设置内部容器大小
+                var windowHeight = $(window).height();
+                $(".bgDiv,.divContainer").css("height",windowHeight);
+            })
+        });
+
+        function dropdownOpen() {
+            var $dropdownLi = $('li.dropdown');
+            $dropdownLi.mouseover(function () {
+                $(this).addClass('open');
+            }).mouseout(function () {
+                $(this).removeClass('open');
+            });
+        }
+    </script>
+</head>
+<body id="index-body">
+<div class="main">
+    <div id="header" th:include="commonPage/header :: header"></div>
+
+    <div class="mainContainer">
+        <div class="bgDiv"></div>
+        <div class="divContainer">
+            <div layout:fragment="content" class="mainPart"></div>
+            <button type="button" class="up"></button>
+            <div id="footer" th:include="commonPage/footer :: footer"></div>
+        </div>
+    </div>
+</div>
+<script th:if="${profilesActive} eq 'dev'" src="https://cdn.bootcss.com/less.js/3.0.4/less.min.js"></script>
+<script>
+    /*$(".navdiv ul li a").click(function() {
+        $(".firstMenuName").text($(this).text());
+    });*/
+
+    $(".firstMenuName").text($("#phoneMenuName").text());
+</script>
+</body>
+</html>

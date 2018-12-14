@@ -1,0 +1,46 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:gm="" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout/layout">
+<head>
+    <link gm:href="index">
+    <link gm:href="content">
+</head>
+<body id="index-body">
+<div layout:fragment="content"><div id="phoneMenuName" style="display: none;">客户案例</div>
+    <div th:replace="layout/commonTop :: carouse('客户案例',
+                                                    'case/bg_top.png',
+                                                    '多年来，我们致力于扎根行业、深入场景进行产品设计和创新，为行业用户构建端到端的解决方案，为客户网络创造新价值')">
+    </div>
+
+    <div th:replace="layout/breadNav :: nav('首页,客户案例,四川机电职业技术学院案例','/pageindex,/pagecase-case,/pagecase-case_panzhihua')"></div>
+
+    <div class="container content-detail">
+        <div class="content-top">
+            <div class="content-title">四川机电职业技术学院案例</div>
+            <div class="content-info">作者：admin &nbsp; 发布日期：2017/12/7 &nbsp; 关注次数：299</div>
+        </div>
+        <div class="content-bottom">
+            <h4>学校概况</h4>
+            <p>四川机电职业技术学院位于名闻遐迩、得天独厚的钢铁钒钛之都，中国唯一以花命名的城市——四川省攀枝花市。学院是四川省公办的普通高等职业技术学院，由攀钢集团有限公司出资举办，四川省人民政府教育行政部门是教育行政主管部门。学院占地1000余亩，有马家田、金江两个校区。树木葱郁、鸟语花香，有“园林式学校”的美誉。学院建筑面积23万平方米，图书馆藏书56.53万册。学院现有在校学生8550人。教职工592人，专任教师341人，具有副高级及以上职称教师166人，具有硕士及以上学历（含在读）124人，全国冶金行业名师2人，“双师”素质教师111人，省级教学团队1个、省级教学名师1人，攀钢技能大师室2个。</p>
+
+            <h4>原有网络概况</h4>
+            <p>1、办公网有线：学校自建，建设时间长期，维护工作量大。</p>
+            <p>2、学生宿舍网有线：移动、联通、电信，通过拨号直接连入互联网。</p>
+            <p>3、无线：没有无线网络。</p>
+            <p>4、宿舍和办公区没有进行局域网互通学生无法在校园内实现随时访问校园网资源。</p>
+
+            <h4>冠铭科技投资后</h4>
+            <p>1、建设内容：为学院马家田、金江两个校区进行全校的无线网络全覆盖，无线网络覆盖率高达98%，建设区域包括办公区、教学区、实训区、生活区、活动中心、图书馆、实习工厂、模具车间等无线网络信号全覆盖，并对原有有线网络进设备升级并与无线网络进行整合。</p>
+            <p>2、安装面板AP，2000台；吸顶AP，500台；室外AP，200台。</p>
+            <p>3、新增防火墙、核心交换机、上网行为管理、认证计费等设备各1台。</p>
+            <p>4、新增汇聚交换机30台，POE接入交换机150台。</p>
+            <p>5、实现对学校学生，教职工上网行为进行统一认证及计费，并对上网用户的行为进行审计及日志记录存储等。</p>
+            <p>6、学院校园网的整合，加速学校信息化建设进程，为信息化校园提供了稳定且可持续发展的基础平台。</p>
+
+            <div class="content-img"><img src="/static/images/case/case_panzhihua01.jpg" width="881" alt="01"></div>
+
+            <div class="content-img"><img src="/static/images/case/case_panzhihua02.png" width="881" alt="02"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

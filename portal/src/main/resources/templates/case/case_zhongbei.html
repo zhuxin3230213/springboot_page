@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:gm="" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout/layout">
+<head>
+    <link gm:href="index">
+    <link gm:href="content">
+</head>
+<body id="index-body">
+<div layout:fragment="content"><div id="phoneMenuName" style="display: none;">客户案例</div>
+    <div th:replace="layout/commonTop :: carouse('客户案例',
+                                                    'case/bg_top.png',
+                                                    '多年来，我们致力于扎根行业、深入场景进行产品设计和创新，为行业用户构建端到端的解决方案，为客户网络创造新价值')">
+    </div>
+
+    <div th:replace="layout/breadNav :: nav('首页,客户案例,陕西中北专修学院案例','/pageindex,/pagecase-case,/pagecase-case_zhongbei')"></div>
+
+    <div class="container content-detail">
+        <div class="content-top">
+            <div class="content-title">陕西中北专修学院案例</div>
+            <div class="content-info">作者：admin &nbsp; 发布日期：2017/11/28 &nbsp; 关注次数：299</div>
+        </div>
+        <div class="content-bottom">
+            <h4>学校概况</h4>
+            <p>陕西中北专修学院，是省教育厅、省人力资源和社会保障厅批准的一所容高、中等学历教育，高、中级技工教育和职业技能培训为一体，以新型职业人才的培养为总体特色的综合性职教院校。学院现辖四个分院，开设有列车乘务、安检与铁路服务、铁道供电与信号、列车餐饮、铁路物流、航空服务、民航票务、电信传媒、数控、焊接、烹饪、报关报检与港口物流、护理、学前教育、平面设计与网络工程、电喷汽修等38个专业，设成人专升本、高级工大专、职业中专、技能短训四个层次。现有教职工300多名，在校学生6000余名。学院在全省同行业率先实现了办公自动化管理，出版了20余万字的《制度汇编》；在全市同行业首家通过ISO9001国际质量管理体系认证。办学十八年来，累计为社会培养输送各类专业技术人才50000余名。万余名铁路乘务毕业生飘红全国铁路线，2000多名航空服务学生走俏全国各大国际机场和航空服务公司，上万名数控、焊接、汽修毕业生在数十家500强企业建功立业。因办学业绩突出，学院先后被授予“全国职教先进单位”等多项殊荣。</p>
+
+            <h4>原有网络概况</h4>
+            <p>1、该学院由于搬迁至新校区，学院无有线网办公网，教育网及无线网络。</p>
+            <p>2、学院无校园一卡通系统。</p>
+
+            <h4>冠铭科技投资后</h4>
+            <p>1、建设内容：对校区进行有线网络及无线网络的建设，其中无线网络覆盖率达到98%。并将有线网络按业务的不同需要进行物理的网络隔离。</p>
+            <p>2、安装有线面板，586个；面板AP 504台，吸顶AP，100台；室外AP，20台。</p>
+            <p>3、新增核心交换机2套；防火墙、上网行为管理、认证计费等设备各1套。</p>
+            <p>4、新增汇聚交换机16台，POE接入交换机62台。</p>
+            <p>5、实现对学校学生，教职工上网行为进行统一认证及计费，并对上网用户的行为进行审计及日志记录存储等。</p>
+            <p>6、学院校园网的整合，加速学校信息化建设进程，为信息化校园提供了稳定且可持续发展的基础平台。</p>
+            <p>7、完成了学院一卡通系统的建设。</p>
+
+            <div class="content-img"><img src="/static/images/case/case_zhongbei01.jpg" width="881" alt="01"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

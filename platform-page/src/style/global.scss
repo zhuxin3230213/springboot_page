@@ -1,0 +1,32 @@
+@import 'variable.scss';
+@import 'icon/iconfont.css';
+
+/*
+*页面搜索表单通用样式
+*/
+.search-form{
+    width:600px;
+    text-align:left;
+    margin: 0 auto;
+}
+
+.search-form .search-button-col{
+  text-align:center;
+}
+
+.el-container{
+    box-sizing: border-box;
+    // height:100%;
+}
+
+.form-layout{
+  .form-item-layout>.el-form-item__content{
+     width:200px;
+  }
+}
+
+
+//修改全局textarea，禁止调整大小
+textarea{
+  resize:none!important;
+}

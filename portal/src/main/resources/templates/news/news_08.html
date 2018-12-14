@@ -1,0 +1,136 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:gm="" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout/layout">
+<head>
+    <link gm:href="index">
+    <link gm:href="content">
+    <style>
+        table{
+            width: 90%;
+            margin: auto;
+            border: 1px solid rgba(255,255,255,.7);
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td{
+            border: 1px solid rgba(255,255,255,.7);
+            color: rgba(255,255,255,.7);
+            height: 45px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body id="index-body">
+<div layout:fragment="content"><div id="phoneMenuName" style="display: none;">最新动态</div>
+    <div th:replace="layout/commonTop :: carouse('最新动态',
+                                                    'bg_news_top.png',
+                                                    '多年来，我们致力于扎根行业，深入场景进行产品设计和创新，为行业用户构建端到端的解决方案，为客户网络创造新价值。')">
+    </div>
+
+    <div th:replace="layout/breadNav :: nav('首页,最新动态,冠铭与学院投资内容与合作方式','/pageindex,/pagenews-news,/pagenews-news_08')"></div>
+
+    <div class="container content-detail">
+        <div class="content-top">
+            <div class="content-title">冠铭与高校投资内容与合作方式</div>
+            <div class="content-info">作者：admin &nbsp; 发布日期：2018/11/12 &nbsp; 关注次数：932</div>
+        </div>
+        <div class="content-bottom">
+            <p>冠铭公司可以为高校投资建设校园网无线网络全覆盖的基础网络，在网络建设完成后，享有多个校区内校园网及其他类投资项目的独家运营权，同时在合件期内冠铭负责高校基础网络设施的运维工作。</p>
+            <p>具体内容如下表：</p>
+            <table>
+                <tr>
+                    <td>序号</td>
+                    <td>项目名称</td>
+                    <td>项目内容</td>
+                    <td>资金额度</td>
+                    <td>备注</td>
+                </tr>
+                <tr>
+                    <td th:colspan="5">1. 智慧校园基础网络</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>网络安全设备</td>
+                    <td>安全网关、上网行为管理、认证计费系统</td>
+                    <td>待定</td>
+                    <td rowspan="5">地勘后确定</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>骨干网络设备</td>
+                    <td>核心交换机、汇聚交换机</td>
+                    <td>待定</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>无线网络</td>
+                    <td>放装AP、高密AP、面板AP及无线控制器（AC）</td>
+                    <td>待定</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>综合布线</td>
+                    <td>机柜、网线（六类及超五类）、光缆系统、辅材</td>
+                    <td>待定</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>实施调试费</td>
+                    <td>与原校园网络对接、新建网络调试实施</td>
+                    <td>审批与采购和建设流程较长</td>
+                </tr>
+                <tr>
+                    <td th:colspan="5">2. 校园直饮水项目</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>校园网直饮水机</td>
+                    <td>浩泽直饮水机（包含办公室内、教学楼内、食堂、宿舍、图书馆等内的<br>直饮水机设备、安装、安装线缆、管材等），收费系统可与学院一卡通对接及可以支持微信支付宝</td>
+                    <td>待定</td>
+                    <td>地勘后确定</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>后期运维</td>
+                    <td>直饮水机耗材更换、日常维护</td>
+                    <td>待定</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td th:colspan="5">3. 校园热水器洗澡（有独立卫生间的宿舍）</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>热水器</td>
+                    <td>采用国内知名品牌电热水器，热水器存水60L，可供4~6人使用</td>
+                    <td>待定</td>
+                    <td rowspan="2">地勘后确定</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>安装实施费</td>
+                    <td>包括线材、管材、开关、施工等费</td>
+                    <td>待定</td>
+                </tr>
+                <tr>
+                    <td th:colspan="5">4. 其他类投资项目</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>共享打印机</td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2">待定</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>共享纸巾</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
